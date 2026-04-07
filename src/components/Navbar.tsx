@@ -44,11 +44,7 @@ export default function Navbar() {
                 <Link key={item.name} to={item.path} className="relative hover:text-pink-500 px-1 py-2 text-sm font-medium transition-colors">
                     <span className={`${location.pathname === item.path ? "font-bold" : ""}`}> {item.name}</span>
                     {location.pathname === item.path && (
-                    <motion.span
-                      layoutId="underline" 
-                      className="absolute left-0 -bottom-1 h-[2px] bg-pink-500 w-full rounded"
-                      transition={{ type: "spring", stiffness: 500, damping: 30 }} 
-                    />
+                    <span className="absolute left-0 -bottom-1 h-[2px] bg-pink-500 w-full rounded"/>
                     )}
                 </Link>
             ))}
