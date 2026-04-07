@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "MIFARE Classic 1K Overview",
+    "summary": "Detailed explanation of MIFARE Classic 1K technology, its structure, vulnerabilities, and practical attacks.",
+    "description": "MIFARE Classic 1K is a contactless smart card widely used in access control, transportation, and small-scale payment systems.",
+    "tags": ["NFC", "RFID", "MIFARE", "MIFARE Classic 1K", "Vulnerabilities"],
+    "github": ""
+  },
+  {
+    "id": 2,
+    "title": "Coming Soon: Malware Analysis",
+    "summary": "An in-depth malware analysis project is in progress.",
+    "description": "This project will focus on analyzing malware behavior in controlled environments.",
+    "tags": ["Malware Analysis", "Reverse Engineering", "Ransomware"],
+    "github": ""
+  }
+]

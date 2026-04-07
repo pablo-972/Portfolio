@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Presshammer: HammerBERT & PressRL",
+    "summary": "Research project exploring Rowhammer and Rowpress attacks on DRAM, including PoCs and AI-based solutions.",
+    "description": "This project was developed as my final year thesis and focuses on the conceptual combination of Rowhammer and Rowpress attacks to induce bit flips in DRAM. It features multiple proof-of-concept implementations that explore the feasibility and impact of these attacks across different scenarios.\n\nThe main contribution is HammerBERT, a Transformer-based (BERT) code analysis tool designed to classify code as malicious, benign, or neutral, making it particularly suitable for static application security testing (SAST). Additionally, PressRL is a reinforcement learning model aimed at mitigating risks by preventing unsafe open-row durations in memory systems, although it remains more conceptual compared to HammerBERT.",
+    "tags": ["C++", "Rowhammer", "Security Research", "Deep Learning", "Reinforcement Learning"],
+    "github": "https://github.com/pablo-972/Presshammer-Analisis-experimental"
+  },
+  {
+    "id": 2,
+    "title": "AIStatic",
+    "summary": "Automated static malware analysis tool with AI-agent string analysis.",
+    "description": "AIStatic is a tool under development for the static analysis phase of malware research. It aims to automate extraction of all possible information from binaries, leveraging AI agents to analyze strings and make decisions based on the findings, and then applying a model to interpret final results.",
+    "tags": ["Python", "Malware Analysis", "Static Analysis", "AI", "Agentic"],
+    "github": "https://github.com/pablo-972"
+  },
+  {
+    "id": 3,
+    "title": "Coming Soon...",
+    "summary": "New projects are on the way.",
+    "description": "This section is reserved for upcoming projects and research work.",
+    "tags": [],
+    "github": "#"
+  }
+]
