@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import projects from '../public/projects.json' // Rutas relativas quitar porque creo que en vercel dan problemas --> ruta absoluta
+import projects from '../public/projects.json' 
 import articles from '../public/articles.json'
 
 
