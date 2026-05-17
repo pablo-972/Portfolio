@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-lg font-bold tracking-wide">
-                Sulkaz
+                localhost
             </a>
           </div>
 

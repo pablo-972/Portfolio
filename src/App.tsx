@@ -77,7 +77,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
             className="mb-6 text-lg md:text-2xl max-w-4xl mx-auto mb-10 ">
-              Appasionate about cybersecurity, AI and hardware hacking.
+              Appasionate about cybersecurity and AI.
               Developing AI-powered tools for malware analysis and red teaming operations. 
               Not only tech, but curious.
           </motion.p>
