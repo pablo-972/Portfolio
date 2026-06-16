@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, X } from "lucide-react";
 import { Link, useLocation  } from "react-router-dom";
 
 const navItems = [
@@ -12,6 +12,15 @@ const navItems = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme) {
+      return storedTheme === "dark";
+    }
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
   const location = useLocation();
 
   useEffect(() => {
@@ -23,11 +32,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${ scrolled ? "backdrop-blur-md border-b border-gray-800" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-        <div className="flex items-center justify-between h-16">
+        <div className="relative flex items-center justify-between h-16">
           
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -38,7 +52,7 @@ export default function Navbar() {
 
 
           {/* Desktop nav */}
-          <div className="hidden md:flex space-x-10">
+          <div className="absolute left-1/2 hidden -translate-x-1/2 md:flex space-x-10">
             {navItems.map(item => (
                 <Link key={item.name} to={item.path} className="relative hover:text-pink-500 px-1 py-2 text-sm font-medium transition-colors">
                     <span className={`${location.pathname === item.path ? "font-bold" : ""}`}> {item.name}</span>
@@ -49,12 +63,31 @@ export default function Navbar() {
             ))}
           </div>
 
+          <button
+            type="button"
+            onClick={() => setDarkMode(!darkMode)}
+            className="ml-auto hidden h-10 w-10 items-center justify-center rounded-md cursor-pointer transition-colors hover:text-pink-500 focus:outline-none md:inline-flex"
+            aria-label="Toggle dark mode"
+            aria-pressed={darkMode}
+          >
+            <Moon size={22} />
+          </button>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md hover:text-pink-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500">
+          <div className="ml-auto flex items-center gap-1 md:hidden">
+            {/* Mobile menu button */}
+            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-pink-500 focus:outline-none">
               <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setDarkMode(!darkMode)}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-md cursor-pointer transition-colors hover:text-pink-500 focus:outline-none"
+              aria-label="Toggle dark mode"
+              aria-pressed={darkMode}
+            >
+              <Moon size={22} />
             </button>
           </div>
         </div>

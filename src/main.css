@@ -89,6 +89,34 @@
   }
 }
 
+.dark {
+  color-scheme: dark;
+}
+
+.dark .border-black {
+  border-color: rgb(229 231 235);
+}
+
+.dark .border-gray-800 {
+  border-color: hsl(var(--border));
+}
+
+.dark .hover\:border-pink-500:hover {
+  border-color: rgb(236 72 153);
+}
+
+.dark .main-card {
+  box-shadow: 0 10px 15px -3px rgb(255 255 255 / 0.14), 0 4px 6px -4px rgb(255 255 255 / 0.14);
+}
+
+.dark .text-gray-600 {
+  color: hsl(var(--muted-foreground));
+}
+
+.dark .hover\:bg-black\/5:hover {
+  background-color: hsl(var(--muted));
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

@@ -25,6 +25,12 @@ function About() {
 
   const contactDetails = [
     {
+      name: "LinkedIn",
+      value: "Pablo",
+      href: "https://linkedin.com/in/pablo-aguilar-897407334",
+      icon: <FaRegEnvelope className="h-5 w-5 text-pink-500" />,
+    },
+    {
       name: "Twitter / DM",
       value: "@sulkaz00",
       href: "https://x.com/sulkaz00",
@@ -104,7 +110,7 @@ function About() {
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="max-w-4xl mx-auto p-8 border-1 border-black rounded-2xl bg-white/5 shadow-lg"
+                className="main-card max-w-4xl mx-auto p-8 border-1 border-black rounded-2xl bg-white/5 shadow-lg"
             >
                 <h2 className="text-3xl font-semibold text-center mb-4">About Me</h2>
                 <p className="text-lg text-center max-w-2xl mx-auto mb-10">

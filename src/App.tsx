@@ -110,9 +110,9 @@ function App() {
             A selection of my most significant work in cybersecurity and software development
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid max-w-5xl mx-auto md:grid-cols-3 gap-6">
             {projects.map((projects) => (
-              <div key={projects.title} className="p-6 rounded-xl border border-black hover:border-pink-500 transition transform hover:-translate-y-1 shadow-lg">
+              <div key={projects.title} className="main-card p-6 rounded-xl border border-black hover:border-pink-500 transition transform hover:-translate-y-1 shadow-lg">
                 <a href={projects.github}>
                   <h3 className="font-semibold mb-2">{projects.title}</h3>
                   <p className="text-sm"> {projects.summary}</p>
@@ -142,9 +142,9 @@ function App() {
             Insights and tutorials on cybersecurity, malware analysis, hardware hacking, red teaming, and software development
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid max-w-4xl mx-auto md:grid-cols-2 gap-6">
               {articles.map((articles) => (
-                <div key={articles.title} className="p-6 rounded-xl border border-black hover:border-pink-500 transition transform hover:-translate-y-1 shadow-lg">
+                <div key={articles.title} className="main-card p-6 rounded-xl border border-black hover:border-pink-500 transition transform hover:-translate-y-1 shadow-lg">
                   <h3 className="font-semibold mb-2">{articles.title}</h3>
                   <p className="text-sm"> {articles.summary}</p>
                 </div>

@@ -17,7 +17,7 @@ export default function Card({ data }: { data: Data }) {
       animate={{ opacity: 1, y: 0 }}
       className="scroll-mt-20"
     >
-      <div className="border border-black rounded-xl p-6 shadow-lg transition-all">
+      <div className="main-card border border-black rounded-xl p-6 shadow-lg transition-all">
         
         {/* HEADER */}
         <h2 className="text-2xl font-bold mb-1">
