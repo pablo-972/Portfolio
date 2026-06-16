@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "MIFARE Classic 1K Overview",
+    "title": "Coming Soon: MIFARE Classic 1K Overview / How to broke them",
     "summary": "Detailed explanation of MIFARE Classic 1K technology, its structure, vulnerabilities, and practical attacks.",
     "description": "MIFARE Classic 1K is a contactless smart card widely used in access control, transportation, and small-scale payment systems.",
     "tags": ["NFC", "RFID", "MIFARE", "MIFARE Classic 1K", "Vulnerabilities"],

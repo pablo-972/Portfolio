@@ -9,11 +9,11 @@
   },
   {
     "id": 2,
-    "title": "AIStatic",
-    "summary": "Automated static malware analysis tool with AI-agent string analysis.",
-    "description": "AIStatic is a tool under development for the static analysis phase of malware research. It aims to automate extraction of all possible information from binaries, leveraging AI agents to analyze strings and make decisions based on the findings, and then applying a model to interpret final results.",
+    "title": "AIM",
+    "summary": "Modular malware analysis framework combining traditional tools, AI agents, and automated reporting.",
+    "description": "AIM is a modular framework for malware analysis that integrates traditional analysis tools, AI agents, and automated reporting into a unified workflow. It provides a flexible architecture for building analysis pipelines, orchestrating tasks across different stages of the malware lifecycle, and assisting analysts with investigation and documentation.\n\nCurrently under development.",
     "tags": ["Python", "Malware Analysis", "Static Analysis", "AI", "Agentic"],
-    "github": "https://github.com/pablo-972"
+    "github": "https://github.com/pablo-972/AIM"
   },
   {
     "id": 3,
