@@ -11,7 +11,7 @@ function App() {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="min-h-dvh flex flex-col">
       <Navbar/>
 
       {/* HERO */}

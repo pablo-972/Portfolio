@@ -8,9 +8,9 @@ import Footer from '../components/Footer'
 export default function Projects() {
   return (
 
-    <div>
+    <div className="min-h-dvh flex flex-col">
         <Navbar/>
-        <div className="container mx-auto px-6 py-30 max-w-4xl">
+        <div className="container mx-auto px-6 py-30 max-w-4xl flex-1">
 
             {/* HEADER */}
             <motion.div

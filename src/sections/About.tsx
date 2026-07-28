@@ -45,10 +45,10 @@ function About() {
   ];
 
   return (
-    <div>
+    <div className="min-h-dvh flex flex-col">
         <Navbar/>
         
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex-1">
 
             {/* HERO */}
             <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 -mt-40">
